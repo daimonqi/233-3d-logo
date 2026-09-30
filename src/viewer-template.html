@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>233 · 3D 图标鼠标跟随预览</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; }
+    body { background: #050505; color: #e7e7e7; font: 14px/1.5 system-ui, -apple-system, 'Microsoft YaHei', sans-serif; overflow: hidden; }
+    #stage { position: fixed; inset: 0; }
+    #stage canvas { width: 100%; height: 100%; display: block; }
+    .caption { position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); opacity: .65; white-space: nowrap; pointer-events: none; }
+    .loader { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: .65; }
+    body[data-ready="true"] .loader { display: none; }
+  </style>
+</head>
+<body>
+  <div id="stage" aria-label="可随鼠标转动的 233 立体图标"></div>
+  <div class="loader">正在载入 3D 图标…</div>
+  <div class="caption">移动鼠标，查看图标转向</div>
+  <script>__VIEWER_BUNDLE__</script>
+</body>
+</html>

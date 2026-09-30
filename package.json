@@ -1,0 +1,16 @@
+{
+  "name": "233-3d-logo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/build-model.mjs && node src/build-viewer.mjs",
+    "build:model": "node src/build-model.mjs",
+    "build:preview": "node src/build-viewer.mjs"
+  },
+  "dependencies": {
+    "esbuild": "0.28.2",
+    "linkedom": "0.18.13",
+    "three": "0.186.1"
+  }
+}
